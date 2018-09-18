@@ -191,6 +191,17 @@ hr {
     font-weight: 150;
 }
 
+
+/* Create List Page */
+
+.date {
+    border-style: ridge;
+    border-width: 1px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+
 @media(min-width: 743px) {
     .col-narrow {
         width: 20%;
