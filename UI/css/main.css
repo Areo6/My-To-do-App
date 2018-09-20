@@ -65,6 +65,23 @@ body {
 
 /* Create Todo Item page */
 
+.profile-img {
+    border-radius: 50%;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-middle-with-baseline;
+}
+
+.profile-img-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.user-name {
+    margin: 7px;
+    font-weight: bolder;
+}
+
 .content-wrap {
     width: 100%;
     margin: 0 auto;
@@ -147,7 +164,10 @@ hr {
     border-width: 0px;
     border-bottom-width: 1px;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 .main-btn {
@@ -202,6 +222,44 @@ hr {
     font-size: 1.2em;
 }
 
+
+/* Profile Page */
+
+.image {
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-middle-with-baseline;
+    margin-left: 20px;
+}
+
+.image-box {
+    margin-top: 20px;
+}
+
+.name-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-labels {
+    font-weight: 300;
+}
+
+.hist-label {
+    /* display: block; */
+    /* color: rgb(7, 9, 63); */
+    color: black;
+    font-weight: 300;
+}
+
+.wrap {
+    display: flex;
+    padding: 10px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
 @media(min-width: 743px) {
     .col-narrow {
         width: 20%;
@@ -210,6 +268,14 @@ hr {
     .col-wide {
         width: 80%;
         float: left;
+    }
+    .wide {
+        width: 20%;
+        padding: 5px;
+    }
+    .narrow {
+        /* width: 40%; */
+        padding: 5px;
     }
 }
 
@@ -221,6 +287,14 @@ hr {
     .col-wide {
         width: 60%;
         float: left;
+    }
+    .wide {
+        width: 80%;
+        padding: 5px;
+    }
+    .narrow {
+        width: 20%;
+        padding: 5px;
     }
 }
 
@@ -238,6 +312,14 @@ hr {
         width: 100%;
         float: left;
     }
+    .wide {
+        width: 60%;
+        padding: 0px;
+    }
+    .narrow {
+        width: 40%;
+        padding: 0px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -248,6 +330,14 @@ hr {
         float: left;
     }
     .login-input {
+        width: 80%;
+    }
+    .wide {
         width: 60%;
+        padding: 0px;
+    }
+    .narrow {
+        width: 40%;
+        padding: 0px;
     }
 }
