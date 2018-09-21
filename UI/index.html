@@ -7,20 +7,23 @@
     <title>My Tto-do App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="javascript/main.js"></script>
 </head>
 
 <body>
     <div class="content-wrap content">
         <div class="col-narrow navigation">
-            <div class="profile-img-label">
-                <img src="images/profile.jpg" alt="Profile Picture" width="30px" height="30px" class="profile-img">
-                <div class="user-name">
-                    <label>Eric</label>
+            <a href="profile.html">
+                <div class="profile-img-label">
+                    <img src="images/profile.jpg" alt="Profile Picture" width="30px" height="30px" class="profile-img">
+                    <div class="user-name">
+                        <label>Eric</label>
+                    </div>
                 </div>
-            </div>
+            </a>
             <label class="my-to-do">My To-dos</label>
             <hr />
-            <button class="btn">Read Python <label class="item-num">(3)</label> </button>
+            <button class="btn" onclick="">Read Python <label class="item-num">(3)</label> </button>
             <button class="btn">Prepare Meetings <label class="item-num">(1)</label></button>
             <button class="btn">Visit Jinja <label class="item-num">(0)</label></button>
             <button class="btn create-list-btn"><label class="plus">+</label> &emsp; Create List</button>
@@ -30,10 +33,10 @@
                 <label>Read Python &emsp;</label>
                 <button class="del-task-btn">Delete</button>
             </div>
-            <div>
+            <div id="add-item">
                 <div class="add-task-field">
                     <input class="add-task" type="text" name="add" placeholder="Add todo item...">
-                    <button class="main-btn">Add</button>
+                    <button class="main-btn" onclick="addItem(); return false;">Add</button>
                 </div>
                 <div class="todo-item">
                     <input type="checkbox" name="read-python">
