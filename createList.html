@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My To-do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div class="content-wrap content">
+        <div class="col-narrow navigation">
+            <a>
+                <div class="profile-img-label">
+                    <img src="images/profile.jpg" alt="Profile Picture" width="30px" height="30px" class="profile-img">
+                    <div class="user-name">
+                        <label>Eric</label>
+                    </div>
+                </div>
+            </a>
+            <label class="my-to-do">My To-dos</label>
+            <hr />
+            <button class="btn">Read Python <label class="item-num">(3)</label> </button>
+            <button class="btn">Prepare Meetings <label class="item-num">(1)</label></button>
+            <button class="btn">Visit Jinja <label class="item-num">(0)</label></button>
+            <button class="btn create-list-btn"><label class="plus">+</label> &emsp; Create List</button>
+        </div>
+        <div class="col-wide main-content">
+            <div class="todo-title">
+                <label>Create List &emsp;</label>
+                <button class="del-task-btn">Cancel</button>
+            </div>
+            <div>
+                <div class="add-task-field">
+                    <input class="add-task" type="text" name="add" placeholder="Create List...">
+                    <button class="main-btn">Add</button>
+                </div>
+                <div>
+                    <label>Due date</label>
+                    <input type="date" name="date" min="09/18/2018" value="09/18/2018" class="date">
+                    <input type="button" name="add-list" value="Add" class="del-task-btn">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
