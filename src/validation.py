@@ -57,4 +57,14 @@ def is_existing_user(account, email):
     if len(existing_user) != 0:
         return True
     return False
+
+def valid_task(task):
+    """
+    This function checks if a task is a valid or not
+    """
+    if not isinstance(task, str):
+        return "Invalid format. Tsk must be a string"
+    if len(task.strip()) < 2:
+        return "Task must be at least 2 characters long"
+    return "Valid"
     

@@ -109,7 +109,7 @@ body {
 }
 
 .main-content {
-    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../images/todo.png) no-repeat fixed;
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../images/todo.jpg) no-repeat fixed;
     background-size: cover;
     padding: 10px;
     margin: 0px;
@@ -304,6 +304,9 @@ a {
         overflow: auto;
         height: 100%;
     }
+    .navigation {
+        height: 50%;
+    }
     .col-narrow {
         width: 100%;
         float: left;
@@ -331,13 +334,5 @@ a {
     }
     .login-input {
         width: 80%;
-    }
-    .wide {
-        width: 60%;
-        padding: 0px;
-    }
-    .narrow {
-        width: 40%;
-        padding: 0px;
     }
 }
