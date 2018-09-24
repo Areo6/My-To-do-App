@@ -7,6 +7,7 @@
     <title>My Tto-do App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="javascript/main.js"></script>
 </head>
 
 <body>
@@ -32,10 +33,10 @@
                 <label>Read Python &emsp;</label>
                 <button class="del-task-btn">Delete</button>
             </div>
-            <div>
+            <div id="add-item">
                 <div class="add-task-field">
                     <input class="add-task" type="text" name="add" placeholder="Add todo item...">
-                    <button class="main-btn">Add</button>
+                    <button class="main-btn" onclick="addItem(); return false;">Add</button>
                 </div>
                 <div class="todo-item">
                     <input type="checkbox" name="read-python">
