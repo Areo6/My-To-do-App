@@ -1,4 +1,4 @@
-from validation import valid_task
+from src.validation import valid_task
 
 
 todo_list = []

@@ -1,4 +1,4 @@
-from validation import is_valid_name, is_valid_email,is_valid_password, is_existing_user
+from src.validation import is_valid_name, is_valid_email,is_valid_password, is_existing_user
 
 
 accounts = []
@@ -37,8 +37,3 @@ def login(email, password):
     if len(passcode) == 0:
         return "Invalid password. Please enter the correct password"
     return "You have successfully logged in"
-
-if __name__ == "__main__":
-    print(add_account("Eric", "eubule@gmail.com", "mlb 10A"))
-    print(login("eubule@gmail.com", "mlb 10A"))
-    print(accounts)

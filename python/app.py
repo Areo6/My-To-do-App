@@ -1,5 +1,5 @@
-from accounts import login, add_account
-from tasks import create_task, delete_task, delete_all_tasks, mark_as_finished, view_tasks
+from v1.src.accounts import login, add_account
+from v1.src.tasks import create_task, delete_task, delete_all_tasks, mark_as_finished, view_tasks
 
 
 def loggedin_user():
